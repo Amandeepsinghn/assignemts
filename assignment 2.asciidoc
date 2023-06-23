@@ -1,0 +1,102 @@
++*In[2]:*+
+[source, ipython3]
+----
+# ANS 1
+l=[('Sachin Tendulkar', 34357), ('Ricky Ponting', 27483), ('Jack Kallis', 25534), ('Virat Kohli', 24936)]
+l.sort(key=lambda x:x[1])
+print(l)
+
+----
+
+
++*Out[2]:*+
+----
+[('Virat Kohli', 24936), ('Jack Kallis', 25534), ('Ricky Ponting', 27483), ('Sachin Tendulkar', 34357)]
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+# ANS 2 
+l=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list(map(lambda x:x**2,l))
+
+
+----
+
+
++*Out[3]:*+
+----[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+# ans 3
+l= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list(map(lambda x:str(x),l))
+
+----
+
+
++*Out[4]:*+
+----['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+from functools import reduce
+
+----
+
+
++*In[8]:*+
+[source, ipython3]
+----
+# ANS 4
+l=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]
+reduce(lambda x,y:x*y,l)
+
+----
+
+
++*Out[8]:*+
+----15511210043330985984000000----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+# ANS 5
+l=[2, 3, 6, 9, 27, 60, 90, 120, 55, 46]
+list(filter(lambda x:x%2==0 and x%3==0,l))
+
+
+----
+
+
++*Out[9]:*+
+----[6, 60, 90, 120]----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+# ANS 6
+l=['python', 'php', 'aba', 'radar', 'level']
+list(filter(lambda x:x=="".join(reversed(x)),l))
+
+----
+
+
++*Out[10]:*+
+----['php', 'aba', 'radar', 'level']----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
