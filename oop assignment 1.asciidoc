@@ -1,0 +1,216 @@
++*In[94]:*+
+[source, ipython3]
+----
+#ans 1 
+class vechile:
+    
+    def __init__(self,name,speed,avg,capacity):
+        self.name_of_vechile=name
+        self.max_speed=speed
+        self.average_of_vechile=avg
+        self.car_capacity=capacity
+        
+    def car_capacity(self):
+        return self.car_capacity
+        
+    def name_of_vechile(self):
+        return self.name_of_vechile
+        
+    
+----
+
+
++*In[95]:*+
+[source, ipython3]
+----
+c=vechile('honda',200,300,5)
+----
+
+
++*In[108]:*+
+[source, ipython3]
+----
+#ans 2 
+
+class child(vechile):
+    
+    def seating_capacity(self):
+        print (self.name_of_vechile,self.car_capacity)
+        
+        
+    
+    
+    
+        
+----
+
+
++*In[96]:*+
+[source, ipython3]
+----
+c.car_capacity
+----
+
+
++*Out[96]:*+
+----5----
+
+
++*In[100]:*+
+[source, ipython3]
+----
+z=child('honda',200,300,5)
+----
+
+
++*In[105]:*+
+[source, ipython3]
+----
+z.seating_capacity()
+----
+
+
++*Out[105]:*+
+----
+honda 5
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[1]:*+
+[source, ipython3]
+----
+# ans 3
+# multiple inheritance are used to use method of another class by using another class
+
+class class1:
+    
+    def room(self):
+        return 'this is class 1'
+----
+
+
++*In[3]:*+
+[source, ipython3]
+----
+class class2(class1):
+    
+    def room_2(self):
+        return 'this is class 2'
+----
+
+
++*In[14]:*+
+[source, ipython3]
+----
+c=class2()
+----
+
+
++*In[15]:*+
+[source, ipython3]
+----
+c.room()
+----
+
+
++*Out[15]:*+
+----'this is class 1'----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+#ans 4
+# getter= these are used allgin values
+# setter= these are used to take another values 
+class employee:
+    
+    def set_name(self,nm): #setter
+        self.name=nm
+        
+    def get_name(self): #getter
+        return 'name is',self.name
+        
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+c=employee()
+----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+c.set_name('rahul')
+----
+
+
++*In[8]:*+
+[source, ipython3]
+----
+c.get_name()
+----
+
+
++*Out[8]:*+
+----('name is', 'rahul')----
+
+
++*In[35]:*+
+[source, ipython3]
+----
+#ans 5 method overiding= when we have two method of different class 
+#but with same name and same number of argument it is called method overiding
+
+class m1:
+    
+    def show(self):
+        print('this is m1')
+----
+
+
++*In[39]:*+
+[source, ipython3]
+----
+class m2(m1):
+
+    def show(self):
+        print('this is m2') 
+----
+
+
++*In[40]:*+
+[source, ipython3]
+----
+c=m2()
+----
+
+
++*In[41]:*+
+[source, ipython3]
+----
+c.show()
+----
+
+
++*Out[41]:*+
+----
+this is m2
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
