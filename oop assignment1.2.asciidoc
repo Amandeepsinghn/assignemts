@@ -1,0 +1,352 @@
++*In[1]:*+
+[source, ipython3]
+----
+#ans 1 
+# class = class is an bluprint for creating objects
+#objects= functions defined in classes are known as objects
+
+
+----
+
+
++*In[18]:*+
+[source, ipython3]
+----
+class pwskills:
+    
+    def __init__(self,mentor,student):
+        self.mentor_name=mentor
+        self.student=student
+        
+    @classmethod    
+    def name(cls,name):
+        return cls.name
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+#ANS 2 
+# polymorphisim
+#abstraction
+#inheritance
+#encapsulation
+
+----
+
+
++*In[28]:*+
+[source, ipython3]
+----
+#ans 3
+#__init__=it is used to take input form the user 
+----
+
+
++*In[29]:*+
+[source, ipython3]
+----
+class mentor:
+    def __init__(self,mentor):
+        self.mentor_name=mentor
+----
+
+
++*In[31]:*+
+[source, ipython3]
+----
+pw=mentor('aalo')
+----
+
+
++*In[32]:*+
+[source, ipython3]
+----
+#ANS 4
+#SELF IS USED TO REFERNCE TO THE INTIAL CLASS
+----
+
+
++*In[2]:*+
+[source, ipython3]
+----
+#ANS 5
+# inheritance is way to inherit the properites of one class to the class
+# types of inheritanc
+# simple,multiple,multilevel,hierchical,hybrid 
+----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+# single inheritance 
+
+class parent:
+    def func1(self):
+        print('this is function 1')
+        
+----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+class child(parent):
+    
+    def func2(self):
+        print('this function is in child class')
+        
+----
+
+
++*In[11]:*+
+[source, ipython3]
+----
+p=child()
+----
+
+
++*In[12]:*+
+[source, ipython3]
+----
+p.func1()
+----
+
+
++*Out[12]:*+
+----
+this is function 1
+----
+
+
++*In[15]:*+
+[source, ipython3]
+----
+# multiple inheritance 
+class parent1:
+    
+    def func3(self):
+        print('this is fucntion no 3')
+----
+
+
++*In[16]:*+
+[source, ipython3]
+----
+class child1:
+    
+    def func4(self):
+        print('this is function no 4')
+----
+
+
++*In[17]:*+
+[source, ipython3]
+----
+class both(parent1,child1):
+    
+    def func5(self):
+        print('this is function no 5')
+----
+
+
++*In[18]:*+
+[source, ipython3]
+----
+v=both()
+----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+v.func4()
+----
+
+
++*Out[19]:*+
+----
+this is function no 4
+----
+
+
++*In[21]:*+
+[source, ipython3]
+----
+#multilevel 
+class parent2:
+    
+    def fun6(self):
+        print('this is function no 6')
+----
+
+
++*In[22]:*+
+[source, ipython3]
+----
+class child2(parent2):
+    
+    def fun7(self):
+        print('this is function no 7')
+----
+
+
++*In[23]:*+
+[source, ipython3]
+----
+class both(child2):
+    
+    def fun8(self):
+        print('this is function no 8')
+----
+
+
++*In[24]:*+
+[source, ipython3]
+----
+b=both()
+----
+
+
++*In[25]:*+
+[source, ipython3]
+----
+b.fun6()
+----
+
+
++*Out[25]:*+
+----
+this is function no 6
+----
+
+
++*In[32]:*+
+[source, ipython3]
+----
+#herirchal 
+class parent3:
+    
+    def fun9(self):
+        print('this is function no 9')
+
+----
+
+
++*In[33]:*+
+[source, ipython3]
+----
+class child3(parent3):
+    def fun10(self):
+        print('this is function 10')
+----
+
+
++*In[34]:*+
+[source, ipython3]
+----
+class child4(parent3):
+    def fun11(self):
+        print('this is function 11')
+----
+
+
++*In[35]:*+
+[source, ipython3]
+----
+class child5(parent3):
+    def fun12(self):
+        print('this is function 12')
+    
+----
+
+
++*In[36]:*+
+[source, ipython3]
+----
+m=child5()
+----
+
+
++*In[37]:*+
+[source, ipython3]
+----
+m.fun9()
+----
+
+
++*Out[37]:*+
+----
+this is function no 9
+----
+
+
++*In[39]:*+
+[source, ipython3]
+----
+# hybrid 
+
+class parent4:
+    
+    def fun1(self):
+        print('this is fun 1')
+----
+
+
++*In[40]:*+
+[source, ipython3]
+----
+class child4(parent4):
+    
+    def fun2(self):
+        print('this is fun 2')
+----
+
+
++*In[41]:*+
+[source, ipython3]
+----
+class both(parent4):
+    
+    def fun3(self):
+        print('this is fun 3')
+----
+
+
++*In[44]:*+
+[source, ipython3]
+----
+class king(both):
+    
+    def fun4(self):
+        print('this is fun 4')
+----
+
+
++*In[43]:*+
+[source, ipython3]
+----
+o=king()
+----
+
+
++*In[45]:*+
+[source, ipython3]
+----
+o.fun3()
+----
+
+
++*Out[45]:*+
+----
+this is fun 3
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
