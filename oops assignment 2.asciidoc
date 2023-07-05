@@ -1,0 +1,186 @@
+ans 1 
+abstraction provides skeletal of the class whcih can be used in another. it just bascillay helps to minimize 
+the human effort to write methods again and agian 
+
+
++*In[9]:*+
+[source, ipython3]
+----
+import abc
+
+class skel:
+    
+    @abc.abstractmethod
+    def func1(self,name):
+        pass
+        
+    
+----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+class motor(skel):
+    def func1(self,name):
+        self.student_name=name
+----
+
+
++*In[18]:*+
+[source, ipython3]
+----
+p=motor()
+----
+
+
++*In[19]:*+
+[source, ipython3]
+----
+p.func1('motor')
+----
+ans 2
+abstraction= it provides skeletal of the class which can be used in another class. it just bascillay helps to minimize the human effort to write methods again and again.
+
+encapsulation= it hides the information whcih do not want to be seen by user only the coder who wrote the code can access it 
+
++*In[20]:*+
+[source, ipython3]
+----
+# abstraction
+import abc
+class abstraction:
+    
+    @abc.abstractclassmethod
+    def con(self,name,brotherhood):
+        pass
+
+    
+    
+----
+
+
++*In[21]:*+
+[source, ipython3]
+----
+#ENCAPSULATION 
+
+class oho:
+    
+    def __init__(self,name,product,engine):
+        self.__mentor_name=name 
+        self.product_no=product
+        self.__engine=engine 
+----
+
+
++*In[22]:*+
+[source, ipython3]
+----
+c=oho('shomiya','cooler','v4')
+----
+
+
++*In[23]:*+
+[source, ipython3]
+----
+c.product_no
+----
+
+
++*Out[23]:*+
+----'cooler'----
+
+
++*In[25]:*+
+[source, ipython3]
+----
+# ans 3 
+# abc module provide the buleprint of the class which can be used in another classes. it is used to reduce the human effort to write 
+# the code again and agian
+----
+
+
++*In[26]:*+
+[source, ipython3]
+----
+# ans 4
+# data abstraction is hiding internal implementation of the program so that is not visible to the user and we define another fucntion 
+# to cahange or access it 
+----
+
+
++*In[47]:*+
+[source, ipython3]
+----
+class meta:
+    
+    def __init__(self,account_number,balance):
+        self.__account_number=account_number 
+        self.__balance_account=balance
+        
+    def set_balance(self,amount):
+        self.__balance_account=self.__balance_account+amount 
+        
+    def get_balance(self):
+        return self.__balance_account
+    
+    def withdraw(self,amount):
+        if self.__balance_account<amount: 
+            print('insufficent balance')
+        
+        else: 
+            self.__balance_account=self.__balance_account-amount 
+    
+    
+----
+
+
++*In[40]:*+
+[source, ipython3]
+----
+p=meta(7600,87634)
+----
+
+
++*In[41]:*+
+[source, ipython3]
+----
+p.get_balance()
+----
+
+
++*Out[41]:*+
+----87634----
+
+
++*In[43]:*+
+[source, ipython3]
+----
+p.set_balance(500)
+----
+
+
++*In[48]:*+
+[source, ipython3]
+----
+p.withdraw(4543)
+----
+
+
++*In[50]:*+
+[source, ipython3]
+----
+p.get_balance()
+----
+
+
++*Out[50]:*+
+----79548----
+ans 5= No we cannot create instance because the whole point of abstract class is to provide the blueprint of the class
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
